@@ -1,7 +1,7 @@
 import os
 
 # PATHS
-LEAGUE_DIR = 'C:/Riot Games/League of Legends'
+LEAGUE_DIR = 'D:/Riot Games/League of Legends'
 LEAGUE_PATH = LEAGUE_DIR + '/LeagueClient'
 LOCKFILE_PATH = LEAGUE_DIR + "/lockfile"
 LEAGUE_GAME_CONFIG_PATH = LEAGUE_DIR + '/Config/game.cfg'
@@ -25,8 +25,10 @@ KILL_LEAGUE_CLIENT = 'TASKKILL /F /IM LeagueClient.exe'
 KILL_LEAGUE = 'TASKKILL /F /IM "League of Legends.exe"'
 KILL_RIOT_CLIENT = 'TASKKILL /F /IM RiotClientUx.exe'
 
-# GAME DATA
+# GAME DATA，游戏数据
+#
 ACCOUNT_MAX_LEVEL = 30
+
 BEGINNER_BOTS_GAME_LOBBY_ID = 840
 INTERMEDIATE_BOTS_GAME_LOBBY_ID = 850
 GAME_LOBBY_ID = BEGINNER_BOTS_GAME_LOBBY_ID

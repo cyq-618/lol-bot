@@ -1,0 +1,12 @@
+
+
+
+
+
+
+
+
+
+
+def getFriendName():
+    return "ddasdas"

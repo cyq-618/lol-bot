@@ -100,7 +100,7 @@ def play_game():
                     screen_locked = True
                     initial_items = True
 
-                # Head to mid lane turret and wait for minions
+                # Head to mid-lane turret and wait for minions
                 utils.press('ctrl+q')
                 utils.attack_move_click(GAME_MINI_MAP_UNDER_TURRET)
                 in_lane = True

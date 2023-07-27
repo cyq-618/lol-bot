@@ -10,6 +10,7 @@ from datetime import datetime
 log = logging.getLogger(__name__)
 
 def main():
+    # 日志系统
     log_dir = os.path.join(os.path.normpath(os.getcwd() + os.sep + os.pardir), 'logs')
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
@@ -19,6 +20,7 @@ def main():
         format='[%(asctime)s] [%(levelname)-7s] [%(funcName)-21s] %(message)s',
         datefmt='%d %b %Y %H:%M:%S',
     )
+
     ch = logging.StreamHandler(sys.stdout)
     ch.setFormatter(logging.Formatter('[%(asctime)s] [%(levelname)-7s] [%(funcName)-21s] %(message)s'))
     logging.getLogger().addHandler(ch)
@@ -32,7 +34,9 @@ def main():
     errno = 0
     while True:
         try:
+            # 初始化，游戏已经打开了
             client.init()
+            # 循环
             client.loop()
         except client.AccountLeveled:
             client.close()
